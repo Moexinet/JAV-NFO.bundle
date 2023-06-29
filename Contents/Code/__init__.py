@@ -1,7 +1,7 @@
 # coding=utf-8
 
 """
-JAVnfoMoviesImporter
+JAVNFO
 
 spec'd from:
  http://wiki.xbmc.org/index.php?title=Import_-_Export_Library#Video_nfo_Files
@@ -115,7 +115,7 @@ def get_gfriends_www():
 
 
 def get_local_filetree():
-    return Core.storage.join_path(Core.app_support_path, Core.config.bundles_dir_name, 'JAVnfoMoviesImporter.bundle', 'Filetree.json')
+    return Core.storage.join_path(Core.app_support_path, Core.config.bundles_dir_name, 'JAVNFO.bundle', 'Filetree.json')
 
 
 def update_local_filetree(write_data):
@@ -153,7 +153,7 @@ class JAVNFO(PlexAgent):
 
     Uses JAV nfo files as the metadata source for Plex Movies.
     """
-    name = 'JAVnfoMoviesImporter'
+    name = 'JAVNFO'
     ver = '2.0'
     primary_provider = True
     languages = [Locale.Language.NoLanguage]
