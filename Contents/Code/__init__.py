@@ -94,7 +94,7 @@ class NFOReader:
 
 
 def get_gfriends_www():
-    request_url = 'http://raw.githubusercontent.com/xinxin8816/gfriends/master/Filetree.json'
+    request_url = 'http://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json'
     context = getattr(ssl, '_create_unverified_context')()
     try:
         response = urllib.urlopen(request_url, context=context)
@@ -102,7 +102,7 @@ def get_gfriends_www():
     except Exception as e:
         log.debug('error {} in original url request, trying for alternative'.format(e))
         try:
-            request_url = 'http://raw.fastgit.org/xinxin8816/gfriends/master/Filetree.json'
+            request_url = 'http://cdn.jsdelivr.net/gh/gfriends/gfriends@master/Filetree.json'
             response = urllib.urlopen(request_url, context=context)
             map_json = json.load(response)
         except Exception as e:
@@ -125,7 +125,7 @@ def update_local_filetree(write_data):
 
 
 def get_gfriends_map():
-    github_template = 'http://raw.githubusercontent.com/xinxin8816/gfriends/master/Content/{}/{}'
+    github_template = 'http://raw.githubusercontent.com/gfriends/gfriends/master/Content/{}/{}'
     
     try:
         map_json = get_gfriends_www()
