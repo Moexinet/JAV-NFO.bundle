@@ -2,129 +2,50 @@
 [
   {
     "id":"debug",
-    "label":"Enable debug logging",
+    "label":"开启调试日志",
     "type":"bool",
-    "default":"true"
+    "default":"false"
   },
   {
     "id":"dayfirst",
-    "label":"Enable day first in ambiguous dates",
+    "label":"日期不明的情况下使用当前日期",
     "type":"bool",
     "default":"false"
   },
   {
     "id":"plot",
-    "label":"Use plot instead of outline\n_____________________________________________________________________________________",
+    "label":"使用 plot 字段替代 outline 字段\n_____________________________________________________________________________________",
     "type":"bool",
-    "default":"false"
+    "default":"true"
   },
   {
     "id":"localmediaagent",
-    "label":"Disable local media support for artwork, trailers and subtitles (use local media assets instead)",
+    "label":"禁用本地媒体对艺术作品、预告片和字幕的支持(改为使用Local Media Assets)",
     "type":"bool",
     "default":"false"
   },
   {
     "id":"trailer",
-    "label":"Enable trailer support",
+    "label":"开启预告片支持",
     "type":"bool",
-    "default":"false"
+    "default":"true"
   },
   {
     "id":"subtitle",
-    "label":"Enable subtitle file support",
+    "label":"开启字幕文件支持",
     "type":"bool",
-    "default":"false"
-  },
-  {
-    "id":"subglobalpath",
-    "label":"Path to global subtitle folder (Leave blank if none)",
-    "type":"text",
-    "default":""
-  },
-  {
-    "id":"beforerating",
-    "label":"_____________________________________________________________________________________\nText before rating (supports html specialchars!):",
-    "type":"text",
-    "default":"&#9733; "
-  },
-  {
-    "id":"afterrating",
-    "label":"Text after rating (supports html specialchars!):",
-    "type":"text",
-    "default":" | "
-  },
-  {
-    "id":"preserverating",
-    "label":"Pad .nfo rating with texts above and place it in front of summary\n_____________________________________________________________________________________",
-    "type":"bool",
-    "default":"false"
+    "default":"true"
   },
   {
     "id":"tlinsummary",
-    "label":"Show tagline in front of summary\n_____________________________________________________________________________________",
-    "type":"bool",
-    "default":"false"
-  },
-  {
-    "id":"ratings",
-    "label":"Restrict additional ratings to identifiers separated by comma (eg: IMDb, RT). If left empty all ratings found will be included.",
-    "type":"text",
-    "default":""
-  },
-  {
-    "id":"ratingspos",
-    "label":"position for additional ratings in summary",
-    "type": "enum",
-    "values": [
-      "front",
-      "back"
-    ],
-    "default": "back"
-  },
-  {
-    "id":"altratings",
-    "label":"Enable additional ratings support\n_____________________________________________________________________________________",
+    "label":"在影片介绍前面显示 tagline 字段\n_____________________________________________________________________________________",
     "type":"bool",
     "default":"false"
   },
   {
     "id":"collectionsfromtags",
-    "label":"Enable generating Collections from tags\n_____________________________________________________________________________________",
+    "label":"开启基于标签生成的合集\n_____________________________________________________________________________________",
     "type":"bool",
-    "default":"true"
-  },
-  {
-    "id": "country",
-    "label": "Country (used for content rating)",
-    "type": "enum",
-    "values": [
-      "",
-      "Australia",
-      "Canada",
-      "France",
-      "Germany",
-      "Netherlands",
-      "United Kingdom",
-      "United States"
-    ],
-    "default": ""
-  },
-  {
-    "id":"athumblocation",
-    "label":"actor thumb location",
-    "type": "enum",
-    "values": [
-      "link",
-      "local",
-      "global"
-    ],
-    "default": "link"
-  },
-  {
-    "id":"athumbpath",
-    "label":"path to movie library or global actor folder",
-    "type":"text",
-    "default":"http://localhost"
+    "default":"false"
   }
 ]
