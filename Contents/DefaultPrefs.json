@@ -1,8 +1,14 @@
 
 [
   {
-    "id":"dayfirst",
-    "label":"日期不明的情况下使用当前日期",
+    "id":"trailer",
+    "label":"开启预告片支持",
+    "type":"bool",
+    "default":"true"
+  },
+  {
+    "id":"subtitle",
+    "label":"开启字幕文件支持",
     "type":"bool",
     "default":"true"
   },
@@ -13,14 +19,8 @@
     "default":"true"
   },
   {
-    "id":"trailer",
-    "label":"开启预告片支持",
-    "type":"bool",
-    "default":"true"
-  },
-  {
-    "id":"subtitle",
-    "label":"开启字幕文件支持",
+    "id":"dayfirst",
+    "label":"日期不明的情况下使用当前日期",
     "type":"bool",
     "default":"true"
   },
