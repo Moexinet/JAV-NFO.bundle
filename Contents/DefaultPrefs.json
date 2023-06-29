@@ -1,28 +1,16 @@
 
 [
   {
-    "id":"debug",
-    "label":"开启调试日志",
-    "type":"bool",
-    "default":"false"
-  },
-  {
     "id":"dayfirst",
     "label":"日期不明的情况下使用当前日期",
     "type":"bool",
-    "default":"false"
+    "default":"true"
   },
   {
     "id":"plot",
     "label":"使用 plot 字段替代 outline 字段\n_____________________________________________________________________________________",
     "type":"bool",
     "default":"true"
-  },
-  {
-    "id":"localmediaagent",
-    "label":"禁用本地媒体对艺术作品、预告片和字幕的支持(改为使用Local Media Assets)",
-    "type":"bool",
-    "default":"false"
   },
   {
     "id":"trailer",
@@ -37,6 +25,12 @@
     "default":"true"
   },
   {
+    "id":"localmediaagent",
+    "label":"禁用本地媒体对艺术作品、预告片和字幕的支持(改为使用Local Media Assets)",
+    "type":"bool",
+    "default":"false"
+  },
+  {
     "id":"tlinsummary",
     "label":"在影片介绍前面显示 tagline 字段\n_____________________________________________________________________________________",
     "type":"bool",
@@ -45,6 +39,12 @@
   {
     "id":"collectionsfromtags",
     "label":"开启基于标签生成的合集\n_____________________________________________________________________________________",
+    "type":"bool",
+    "default":"false"
+  },
+  {
+    "id":"debug",
+    "label":"开启调试日志",
     "type":"bool",
     "default":"false"
   }
